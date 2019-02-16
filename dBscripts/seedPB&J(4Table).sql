@@ -15,4 +15,4 @@ values (1, 1, 2, 1);
 insert into recipes."INGREDIENT_RECIPE_LINK" (recipe_id, ingredient_id, meas_amt, "order")
 values (1, 2, 3, 2);
 insert into recipes."INGREDIENT_RECIPE_LINK" (recipe_id, ingredient_id, meas_amt, "order")
-values (1, 4, 3, 3);
+values (1, 3, 3, 3);

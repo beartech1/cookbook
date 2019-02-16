@@ -1,3 +1,6 @@
+--precondition: database named "cookbook" exists
+--precondition: schema named "recipes" exists
+
 create sequence "LU_MEASUREMENT_id_seq"
 ;
 
@@ -34,7 +37,7 @@ create table recipes."INGREDIENT"
 ;
 
 create index "fki_INGREDIENT_LU_MEASUREMENT_fkey"
-  on "INGREDIENT" (meas_id)
+  on recipes."INGREDIENT" (meas_id)
 ;
 
 create table recipes."RECIPE"
@@ -67,10 +70,10 @@ create table recipes."INGREDIENT_RECIPE_LINK"
 ;
 
 create index "fki_INGRED_REC_LNK_RECIPE_fkey"
-  on "INGREDIENT_RECIPE_LINK" (recipe_id)
+  on recipes."INGREDIENT_RECIPE_LINK" (recipe_id)
 ;
 
 create index "fki_INGRED_REC_LNK_INGREDIENT_fkey"
-  on "INGREDIENT_RECIPE_LINK" (ingredient_id)
+  on recipes."INGREDIENT_RECIPE_LINK" (ingredient_id)
 ;
 
