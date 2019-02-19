@@ -1,0 +1,19 @@
+{
+  "id": 1,
+  "name": "PB & J",
+  "wwPts": 15,
+  "instructions": "1. spread peanut butter on first slice \n2. spread jelly on second slice \n3. put bread together like a sandwich",
+  "tags": "lunch,easy,quick",
+  "ingredients": [
+    {
+      "name": "bread",
+      "measName": "each"
+    }, {
+      "name": "peanut butter",
+      "measName": "tablespoon"
+    }, {
+      "name": "jelly",
+      "measName": "tablespoon"
+    }
+  ]
+}

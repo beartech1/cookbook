@@ -1,12 +1,6 @@
-const {Client} = require('pg');
+'use strict';
 
-const client = new Client({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'cookbook',
-    password: 'postgres',
-    port: 5433,
-});
+const client = require('./setupDb.js').getDb();
 
 client.connect();
 
