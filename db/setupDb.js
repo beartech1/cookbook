@@ -1,8 +1,8 @@
 'use strict';
 
-const {Client} = require('pg');
+const {Pool} = require('pg');
 
-const client = new Client({
+const pool = new Pool({
 	user: 'postgres',
 	host: 'localhost',
 	database: 'cookbook',
@@ -11,7 +11,7 @@ const client = new Client({
 });
 
 module.exports = {
-	getDb: function () {
-		return client;
+	getPool: function () {
+		return pool;
 	}
 };

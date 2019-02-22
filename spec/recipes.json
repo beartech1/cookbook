@@ -7,13 +7,19 @@
   "ingredients": [
     {
       "name": "bread",
-      "measName": "each"
+      "measName": "each",
+      "measAmt": 2,
+      "order": 1
     }, {
       "name": "peanut butter",
-      "measName": "tablespoon"
+      "measName": "tablespoon",
+      "measAmt": 3,
+      "order": 2
     }, {
       "name": "jelly",
-      "measName": "tablespoon"
+      "measName": "tablespoon",
+      "measAmt": 3,
+      "order": 3
     }
   ]
 }

@@ -77,3 +77,4 @@ create index "fki_INGRED_REC_LNK_INGREDIENT_fkey"
   on recipes."INGREDIENT_RECIPE_LINK" (ingredient_id)
 ;
 
+-- TODO: unique constraints for name & ?abbrev?
