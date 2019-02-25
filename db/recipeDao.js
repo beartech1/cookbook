@@ -43,6 +43,13 @@ const addRecipe = function(recipe) {
 							if (err) {
 								console.log(err.stack);
 							}
+
+							// hacky...
+							if (i + 1 === recipe.ingredients.length) {
+								pool.end(() => {
+									console.log('pool has ended.');
+								});
+							}
 						});
 					});
 				});
